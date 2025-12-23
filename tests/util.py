@@ -31,9 +31,9 @@ def build(root, builder='html', **kwargs):
     })
 
     confoverrides = kwargs.pop('confoverrides', {})
-    confoverrides['html_theme'] = 'sphinx_rtd_theme'
+    confoverrides['html_theme'] = 'sphinx_higgs'
     extensions = confoverrides.get('extensions', [])
-    extensions.append('sphinx_rtd_theme')
+    extensions.append('sphinx_higgs')
     confoverrides['extensions'] = extensions
     kwargs['confoverrides'] = confoverrides
 

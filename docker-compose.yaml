@@ -1,7 +1,7 @@
 version: "3.2"
 services:
 
-  sphinx_rtd_theme:
+  sphinx_higgs:
     build: .
     volumes:
       - type: "bind"
@@ -9,7 +9,7 @@ services:
         target: "/project-readonly"
         read_only: true
       - type: "volume"
-        target: "/project-readonly/sphinx_rtd_theme.egg-info"
+        target: "/project-readonly/sphinx_higgs.egg-info"
       - type: "bind"
         source: "./src"
         target: "/project/src"

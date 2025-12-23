@@ -1,7 +1,7 @@
 {
-  "name": "sphinx_rtd_theme",
+  "name": "sphinx-higgs",
   "main": "js/theme.js",
-  "version": "3.1.0rc1",
+  "version": "1.0.0",
   "scripts": {
     "dev": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/readthedocs/sphinx_rtd_theme.git"
+    "url": "https://github.com/jalexiscv/Sphinx-Higgs.git"
   },
-  "author": "Read the Docs",
+  "author": "Jose Alexis Correa Valencia",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/readthedocs/sphinx_rtd_theme/issues"
+    "url": "https://github.com/jalexiscv/Sphinx-Higgs/issues"
   },
-  "homepage": "https://github.com/readthedocs/sphinx_rtd_theme",
+  "homepage": "https://github.com/jalexiscv/Sphinx-Higgs",
   "devDependencies": {
     "bourbon": "~4.3",
     "bourbon-neat": "~1.9",

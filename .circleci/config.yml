@@ -25,49 +25,49 @@ commands:
     steps:
       - checkout
       - node/install:
-          node-version: '14.20'
+          node-version: "14.20"
       - run: npm ci
       - run: npm run build
       - run:
           name: Ensure built assets are up to date
           command: |
-            if [[ `git status sphinx_rtd_theme/ --porcelain` ]]
+            if [[ `git status sphinx_higgs/ --porcelain` ]]
             then
               echo "ERROR: assets are out of date. Make sure to run 'npm run build' on your branch."
-              git status sphinx_rtd_theme/ --porcelain
+              git status sphinx_higgs/ --porcelain
               exit 1
             fi
 
 jobs:
   build:
     docker:
-      - image: 'cimg/python:3.9-node'
+      - image: "cimg/python:3.9-node"
     steps:
       - run-build: {}
   py38:
     docker:
-      - image: 'cimg/python:3.8'
+      - image: "cimg/python:3.8"
     steps:
       - run-tox:
           version: py38
           sphinx-version: "60,61,62,70,71"
   py39:
     docker:
-      - image: 'cimg/python:3.9'
+      - image: "cimg/python:3.9"
     steps:
       - run-tox:
           version: py39
           sphinx-version: "60,61,62,70,71,72,73,74"
   py310:
     docker:
-      - image: 'cimg/python:3.10'
+      - image: "cimg/python:3.10"
     steps:
       - run-tox:
           version: py310
           sphinx-version: "60,61,62,70,71,72,73,74,80"
   py311:
     docker:
-      - image: 'cimg/python:3.11'
+      - image: "cimg/python:3.11"
     steps:
       - run-tox:
           version: py311
@@ -75,7 +75,7 @@ jobs:
 
   py312:
     docker:
-      - image: 'cimg/python:3.12'
+      - image: "cimg/python:3.12"
     steps:
       - run-tox:
           version: py312
@@ -83,7 +83,7 @@ jobs:
 
   py313:
     docker:
-      - image: 'cimg/python:3.13'
+      - image: "cimg/python:3.13"
     steps:
       - run-tox:
           version: py313

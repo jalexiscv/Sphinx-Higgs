@@ -2,17 +2,17 @@ include *.txt
 include babel.cfg
 include LICENSE
 include bin/preinstall.js
-recursive-include sphinx_rtd_theme *.conf
-recursive-include sphinx_rtd_theme *.css
-recursive-include sphinx_rtd_theme *.eot
-recursive-include sphinx_rtd_theme *.html
-recursive-include sphinx_rtd_theme *.js
-recursive-include sphinx_rtd_theme *.js_t
-recursive-include sphinx_rtd_theme *.svg
-recursive-include sphinx_rtd_theme *.ttf
-recursive-include sphinx_rtd_theme *.woff
-recursive-include sphinx_rtd_theme *.woff2
-recursive-include sphinx_rtd_theme/locale *.pot *.po *.mo
+recursive-include sphinx_higgs *.conf
+recursive-include sphinx_higgs *.css
+recursive-include sphinx_higgs *.eot
+recursive-include sphinx_higgs *.html
+recursive-include sphinx_higgs *.js
+recursive-include sphinx_higgs *.js_t
+recursive-include sphinx_higgs *.svg
+recursive-include sphinx_higgs *.ttf
+recursive-include sphinx_higgs *.woff
+recursive-include sphinx_higgs *.woff2
+recursive-include sphinx_higgs/locale *.pot *.po *.mo
 recursive-include tests *.py
 recursive-include tests *.rst
 prune build

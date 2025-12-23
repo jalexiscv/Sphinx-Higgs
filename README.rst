@@ -1,74 +1,83 @@
-**************************
-Read the Docs Sphinx Theme
-**************************
+******************
+Sphinx Higgs Theme
+******************
 
-.. image:: https://img.shields.io/pypi/v/sphinx_rtd_theme.svg
-   :target: https://pypi.python.org/pypi/sphinx_rtd_theme
-   :alt: Pypi Version
-.. image:: https://circleci.com/gh/readthedocs/sphinx_rtd_theme.svg?style=svg
-   :alt: Build Status
-   :target: https://circleci.com/gh/readthedocs/sphinx_rtd_theme
-.. image:: https://img.shields.io/pypi/l/sphinx_rtd_theme.svg
-   :target: https://pypi.python.org/pypi/sphinx_rtd_theme/
+.. image:: https://img.shields.io/badge/version-1.0.0-blue.svg
+   :alt: Version
+.. image:: https://img.shields.io/badge/license-MIT-green.svg
+   :target: https://github.com/jalexiscv/Sphinx-Higgs/blob/main/LICENSE
    :alt: License
-.. image:: https://readthedocs.org/projects/sphinx-rtd-theme/badge/?version=latest
-  :target: http://sphinx-rtd-theme.readthedocs.io/en/latest/?badge=latest
-  :alt: Documentation Status
 
-This Sphinx_ theme was designed to provide a great reader experience for
-documentation users on both desktop and mobile devices. This theme is used
-primarily on `Read the Docs`_ but can work with any Sphinx project. You can find
-a working demo of the theme in the `theme documentation`_
+Un tema profesional y personalizable para Sphinx, basado en el popular tema Read the Docs.
 
-.. _Sphinx: http://www.sphinx-doc.org
-.. _Read the Docs: http://www.readthedocs.org
-.. _theme documentation: https://sphinx-rtd-theme.readthedocs.io/en/stable/
+Características
+===============
 
-Installation
-============
+Este tema Sphinx fue diseñado para proporcionar una excelente experiencia de lectura para
+los usuarios de documentación tanto en dispositivos de escritorio como móviles.
 
-This theme is distributed on PyPI_ and can be installed with ``pip``:
+* Diseño responsive y moderno
+* Navegación intuitiva
+* Soporte para múltiples idiomas
+* Totalmente personalizable
+* Compatible con las últimas versiones de Sphinx
+
+Instalación
+===========
+
+Este tema se puede instalar usando ``pip``:
 
 .. code:: console
 
-   $ pip install sphinx-rtd-theme
+   $ pip install sphinx-higgs
 
-To use the theme in your Sphinx project, you will need to edit
-your ``conf.py`` file's ``html_theme`` setting:
+Para usar el tema en tu proyecto Sphinx, necesitas editar el archivo ``conf.py``
+y configurar la opción ``html_theme``:
 
 .. code:: python
 
-    html_theme = "sphinx_rtd_theme"
+    html_theme = "sphinx_higgs"
 
-.. admonition:: See also:
+Requisitos
+==========
 
-    `Supported browsers`_
-        Officially supported and tested browser/operating system combinations
+* Python >= 3.8
+* Sphinx >= 6.0
+* docutils > 0.18, < 0.22
+* sphinxcontrib-jquery >= 4
 
-    `Supported dependencies`_
-        Supported versions of Python, Sphinx, and other dependencies.
-
-    `Example documentation`_
-        A full example of this theme output, with localized strings enabled.
-
-.. _PyPI: https://pypi.python.org/pypi/sphinx_rtd_theme
-.. _Supported browsers: https://sphinx-rtd-theme.readthedocs.io/en/stable/development.html#supported-browsers
-.. _Supported dependencies: https://sphinx-rtd-theme.readthedocs.io/en/stable/development.html#supported-dependencies
-.. _Example documentation:  https://sphinx-rtd-theme.readthedocs.io/en/stable/
-
-Configuration
+Configuración
 =============
 
-This theme is highly customizable on both the page level and on a global level.
-To see all the possible configuration options, read the documentation on
-`configuring the theme`_.
+Este tema es altamente personalizable tanto a nivel de página como a nivel global.
+Para ver todas las opciones de configuración posibles, consulta la documentación
+de configuración del tema original en
+`sphinx-rtd-theme.readthedocs.io <https://sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html>`_.
 
-.. _configuring the theme: https://sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html
+Origen y Licencia
+=================
 
-Contributing
-============
+Este tema es un fork del excelente `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_
+desarrollado por Read the Docs, Inc. y contribuidores.
 
-If you would like to help modify or translate the theme, you'll find more
-information on contributing in our `contributing guide`_.
+**Mantenedor:** Jose Alexis Correa Valencia
 
-.. _contributing guide: https://sphinx-rtd-theme.readthedocs.io/en/stable/contributing.html
+**Licencia:** MIT
+
+Desarrollo
+==========
+
+Para contribuir al desarrollo de este tema o reportar problemas,
+visita el repositorio en GitHub:
+
+https://github.com/jalexiscv/Sphinx-Higgs
+
+Créditos
+========
+
+Este proyecto está basado en el trabajo original de:
+
+* Dave Snider
+* Read the Docs, Inc. y contribuidores
+
+Agradecemos su excelente trabajo que hizo posible este proyecto.

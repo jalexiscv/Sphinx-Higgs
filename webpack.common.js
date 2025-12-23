@@ -8,7 +8,7 @@ module.exports = {
   },
   output: {
     filename: "js/[name].js?[hash]",
-    path: path.resolve(__dirname, "sphinx_rtd_theme/static")
+    path: path.resolve(__dirname, "sphinx_higgs/static")
   },
   externals: {
     jquery: "jQuery"

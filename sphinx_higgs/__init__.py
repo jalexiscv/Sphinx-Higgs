@@ -1,7 +1,7 @@
 """
-Sphinx Read the Docs theme.
+Sphinx Higgs Theme.
 
-From https://github.com/ryan-roemer/sphinx-bootstrap-theme.
+Tema profesional y personalizable para Sphinx.
 """
 
 import os
@@ -13,7 +13,7 @@ from sphinx.locale import _
 from sphinx.util.logging import getLogger
 
 
-__version__ = '3.1.0rc1'
+__version__ = '1.0.0'
 __version_full__ = __version__
 
 logger = getLogger(__name__)
@@ -69,11 +69,11 @@ def extend_html_context(app, pagename, templatename, context, doctree):
 # See http://www.sphinx-doc.org/en/stable/theming.html#distribute-your-theme-as-a-python-package
 def setup(app):
     if python_version[0] < 3:
-        logger.error("Python 2 is not supported with sphinx_rtd_theme, update to Python 3.")
+        logger.error("Python 2 is not supported with sphinx_higgs, update to Python 3.")
 
     app.require_sphinx('6.0')
     if app.config.html4_writer:
-        logger.error("'html4_writer' is not supported with sphinx_rtd_theme.")
+        logger.error("'html4_writer' is not supported with sphinx_higgs.")
 
     # Since Sphinx 6, jquery isn't bundled anymore and we need to ensure that
     # the sphinxcontrib-jquery extension is enabled.
@@ -89,7 +89,7 @@ def setup(app):
         jquery_add_js_files(app, app.config)
 
     # Register the theme that can be referenced without adding a theme path
-    app.add_html_theme('sphinx_rtd_theme', path.abspath(path.dirname(__file__)))
+    app.add_html_theme('sphinx_higgs', path.abspath(path.dirname(__file__)))
 
     # Add Sphinx message catalog for newer versions of Sphinx
     # See http://www.sphinx-doc.org/en/master/extdev/appapi.html#sphinx.application.Sphinx.add_message_catalog
